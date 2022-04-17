@@ -83,8 +83,8 @@ def main():
     e_1 = Entry(root, width=50)
     e_1.pack()
     
-    encodeButton = Button(root, text="Hash String", command=lambda:  getDataToHash()) ###################
-    encodeButton.pack()
+    hashButton = Button(root, text="Hash String", command=lambda:  getDataToHash()) ###################
+    hashButton.pack()
 
 
     e_2 = Entry(root, width=50)
@@ -101,8 +101,8 @@ def main():
     #e_3.pack()
     #e_3.insert(0, " ") 
 
-    decodeButton = Button(root, text=" Select a File to Hash", command=lambda: getFileToHash())
-    decodeButton.pack()
+    hashFileButton = Button(root, text=" Select a File to Hash", command=lambda: getFileToHash())
+    hashFileButton.pack()
 
     e_4 = Entry(root, width=50)
     e_4.insert(0, "The sha1 hash is ...")
